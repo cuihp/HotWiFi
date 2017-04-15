@@ -1,1 +1,1 @@
-include ':app', ':wifi-library'
+include ':app', ':wifi_library'
