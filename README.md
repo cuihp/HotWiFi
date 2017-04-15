@@ -21,7 +21,7 @@ dependencies {
 }
 ```
 
-* 初始化
+* Step 3.初始化
 
 ```
         //注册handler
@@ -30,7 +30,7 @@ dependencies {
         WifiAPManager.getInstance(this).turnOnWifiAp("ssid", "123123123", WifiAPManager.WifiSecurityType.WIFICIPHER_WPA2);
 ```
 
-* 监听是否开启成功
+* Step 4.监听是否开启成功
 
 ```
 //接收message，做处理
@@ -38,7 +38,7 @@ dependencies {
         public void handleMessage(Message msg) {
             switch (msg.what) {
                 case WifiAPManager.MESSAGE_AP_STATE_ENABLED:
-                    Log.i("WifiAPManager",""wifi热点开启成功" );
+                    Log.i("WifiAPManager","wifi热点开启成功" );
                     break;
                 case WifiAPManager.MESSAGE_AP_STATE_FAILED:
                     Log.i("WifiAPManager","wifi热点关闭");
@@ -50,7 +50,7 @@ dependencies {
     };
 ```
 
-* 释放Handler
+* Step 5.释放Handler
 
 ```
  @Override
