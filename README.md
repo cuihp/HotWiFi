@@ -1,5 +1,6 @@
 # HotWiFi
-  android 便携式热点的开启与关闭
+  1. android 便携式热点的开启与关闭
+  2. 由于未做动态权限申请处理，可将  targetSdkVersion 设置为 22
 
 # How to
 
