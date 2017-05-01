@@ -17,6 +17,7 @@ allprojects {
 * Step 2. Add the dependency
 ```
 dependencies {
+
 	 compile 'com.github.cuihp:HotWiFi:v1.0.0'
 }
 ```
